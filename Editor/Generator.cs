@@ -29,8 +29,7 @@ public class script : EditorWindow {
                 
 
                 if (Selection.activeGameObject.GetComponent<MeshFilter>().mesh.name.IndexOf("Quad Instance") > -1)
-                {
-                    Debug.Log("quad ok");
+                {                   
                     GameObject SelGameobj = Selection.activeGameObject;
                     SSField = SelGameobj;
                     SSTex = SelGameobj.GetComponent<Renderer>().material.mainTexture;
