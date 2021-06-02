@@ -14,7 +14,6 @@ public class script : EditorWindow {
     [MenuItem("JJY/Profile Generator")]
     static void Init()
     {
-        
         script window = (script)GetWindow(typeof(script), false, "Generator");
         window.minSize = new Vector2(350, 110);
         window.maxSize = new Vector2(350, 110);       
@@ -66,7 +65,6 @@ public class script : EditorWindow {
         }        
         if (GUILayout.Button("Generate Profile"))
         {
-
             SSField = GameObject.CreatePrimitive(PrimitiveType.Quad);
             if (SSField != null)
             {
@@ -80,14 +78,8 @@ public class script : EditorWindow {
 
                 Selection.activeGameObject = SSField;
                 
-
                 if (SSCamera != null) SSCamera.transform.SetPositionAndRotation(new Vector3(1.001f, 0.12f, 0.99f), Quaternion.Euler(0.0f, 0.0f, 0.0f));
-
             }
-
-
         }
-
-
     }
 }
